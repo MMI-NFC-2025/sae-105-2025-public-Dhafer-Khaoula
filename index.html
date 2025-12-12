@@ -20,4 +20,55 @@
  <link rel="stylesheet" href="/src/css/style.css" />
 </head>
 <body>
-                     
+ <header class="header">
+      <a class="header__link" href="/">
+        <img
+          class="header__logo"
+          src="/assets/icons/icon-logo-dark (1).svg"
+          alt="Logo FlyTapFest" />
+      </a>
+
+      <button
+        class="header__menu-btn menu-btn"
+        aria-label="menu"
+        aria-expanded="false"
+        aria-controls="mainNav">
+        <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+        <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
+      </button>
+
+      <nav class="header__menu menu" id="mainNav" hidden>
+        <ul class="menu__list u-list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="/">Accueil</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/festival.html">Le Festival</a>                    
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/programme.html">Programme</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/artistes.html">Artistes</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/scenes.html">Scènes</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/infos.html">Infos pratiques</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+        <ul class="menu__social-list u-list-unstyled">
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="https://facebook.com">Facebook</a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="https://instagram.com">Instagram</a>
+          </li>
+        </ul>
+</nav>
+    </header>
+    
