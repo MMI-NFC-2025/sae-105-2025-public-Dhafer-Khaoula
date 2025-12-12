@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+    name="description"
+    content="Découvrez les différentes scènes du FlyTapFest : scène principale, scène drone et espace workshop pour une expérience immersive.">
+    <title>Scènes - FlyTapFest</title>
+
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <script type="module" src="/src/js/script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <a class="header__link" href="/">
+        <img
+          class="header__logo"
+          src="/assets/icons/icon-logo-dark (1).svg"
+          alt="Logo FlyTapFest" />
+      </a>
+
+      <button
+        class="header__menu-btn menu-btn"
+        aria-label="menu"
+        aria-expanded="false"
+        aria-controls="mainNav">
+        <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+        <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
+        <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
+      </button>
+
+      <nav class="header__menu menu" id="mainNav" hidden>
+        <ul class="menu__list u-list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="/">Accueil</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/festival.html">Le Festival</a>
+          </li>                    
+          <li class="menu__item">
+            <a class="menu__link" href="/programme.html">Programme</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/artistes.html">Artistes</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/scenes.html" aria-current="page">Scènes</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/infos.html">Infos pratiques</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+        <ul class="menu__social-list u-list-unstyled" aria-label="Réseaux sociaux">
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero__wrapper">
+        <h1 class="page-hero__title">Les Scènes</h1>
+        <p class="page-hero__subtitle">Trois espaces uniques pour des expériences inoubliables</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__wrapper">
+        <div class="scenes-grid">
+          <article class="scene-card">
+            <div class="scene-card__image">
+              <img src="/assets/img/scene-principale.jpg" alt="">
+            </div>
+            <div class="scene-card__content">
+              <h2 class="scene-card__title">Scène Principale</h2>
+              <p class="scene-card__description">
+                La grande scène où se déroulent les spectacles majeurs du festival. Équipée d'un système de son de pointe et d'un éclairage spectaculaire, elle accueille les performances combinant claquettes et chorégraphies de drones.
+              </p>
+              <ul class="scene-card__features">
+                <li class="scene-card__feature">Capacité : 5000 personnes</li>
+                <li class="scene-card__feature">Système son professionnel</li>
+                <li class="scene-card__feature">Écrans LED géants</li>
+                <li class="scene-card__feature">Spectacles en soirée</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="scene-card">
+            <div class="scene-card__image">
+              <img src="/assets/img/scene-drone.jpg" alt="">
+            </div>
+            <div class="scene-card__content">
+              <h2 class="scene-card__title">Scène Drone</h2>
+              <p class="scene-card__description">
+                Un espace dédié aux démonstrations de drones et aux explications techniques. Découvrez comment sont programmées les chorégraphies aériennes qui illuminent le ciel nocturne.
+              </p>
+              <ul class="scene-card__features">
+                <li class="scene-card__feature">Zone de vol sécurisée</li>
+                <li class="scene-card__feature">Démonstrations en direct</li>
+                <li class="scene-card__feature">Rencontres avec les pilotes</li>
+                <li class="scene-card__feature">Sessions toute la journée</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="scene-card">
+            <div class="scene-card__image">
+              <img src="/assets/img/workshop.jpg" alt="">
+            </div>
+            <div class="scene-card__content">
+              <h2 class="scene-card__title">Espace Workshop</h2>
+              <p class="scene-card__description">
+                Participez à des ateliers d'initiation aux claquettes, découvrez les bases du pilotage de drones, ou assistez à des masterclass avec les artistes du festival.
+              </p>
+              <ul class="scene-card__features">
+                <li class="scene-card__feature">Ateliers claquettes</li>
+                <li class="scene-card__feature">Initiation au pilotage</li>
+                <li class="scene-card__feature">Masterclass artistes</li>
+                <li class="scene-card__feature">Inscription sur place</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="section__wrapper">
+        <h2 class="section__title">Plan du Site</h2>
+        <p class="section__text">
+          Le festival se déroule dans un parc de 10 hectares aménagé pour l'occasion. Retrouvez facilement toutes les scènes et les espaces du festival grâce à notre plan interactif disponible sur place et sur l'application mobile.
+        </p>
+        <div class="map-container">
+          <img src="/assets/img/plan-site.jpg" alt="Plan du site du festival FlyTapFest" class="map-image">
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="section__wrapper">
+        <div class="cta-section__content">
+          <h2 class="cta-section__title">Prêt à vivre l'expérience ?</h2>
+          <p class="cta-section__text">Réservez vos billets dès maintenant et choisissez les spectacles que vous ne voulez pas manquer.</p>
+          <a href="/programme.html" class="btn btn--primary">Voir le programme</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__content">
+        <div class="footer__section">
+          <h3 class="footer__title">FlyTapFest</h3>
+          <p class="footer__text">Le festival qui fusionne l'art des claquettes et la technologie des drones.</p>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__title">Navigation</h3>
+          <nav class="footer__nav">
+            <a href="/" class="footer__link">Accueil</a>
+            <a href="/festival.html" class="footer__link">Le Festival</a>
+            <a href="/programme.html" class="footer__link">Programme</a>
+            <a href="/artistes.html" class="footer__link">Artistes</a>
+            <a href="/scenes.html" class="footer__link">Scènes</a>
+            <a href="/infos.html" class="footer__link">Infos pratiques</a>
+            <a href="/contact.html" class="footer__link">Contact</a>
+          </nav>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__title">Suivez-nous</h3>
+          <div class="footer__social">
+            <a href="https://facebook.com" class="footer__social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://instagram.com" class="footer__social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://twitter.com" class="footer__social-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 FlyTapFest. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* Final Section Component */
+.section--final {
+  background: var(--color-bg-darker);
+  text-align: center;
+}
+
+.final__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--space-md);
+  letter-spacing: 0.05em;
+}
+
+.final__date {
+  font-size: var(--font-size-xl);
+  color: var(--color-text);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-2xl);
+}
+
+.final__contact {
+  font-style: normal;
+  margin-bottom: var(--space-2xl);
+}
+
+.final__contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+}
+
+.final__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.final__link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.final__link:hover {
+  color: var(--color-primary);
+}
+
+.final__partnership {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-xl);
+  background: var(--gradient-card-blue);
+  border: 2px solid var(--color-border-card);
+  border-radius: var(--radius-xl);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.final__partnership-text {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-relaxed);
+}
+
+.final__partnership-name {
+  color: var(--color-text);
+  font-weight: var(--font-weight-bold);
+}
+
+.final__partnership-logo {
+  width: 120px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.final__partnership-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .final__partnership {
+    flex-direction: row;
+    max-width: 600px;
+  }
+  
+  .final__partnership-text {
+    text-align: left;
+    flex: 1;
+  }
+}
