@@ -1,0 +1,48 @@
+/* Programme Info Component */
+.programme-info {
+  display: grid;
+  gap: var(--space-xl);
+  grid-template-columns: 1fr;
+}
+
+.programme-info__card {
+  background: var(--color-bg-card);
+  border: 2px solid var(--color-border-card);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.programme-info__card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-glow-sm);
+  transform: translateY(-4px);
+}
+
+.programme-info__icon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto var(--space-md);
+  color: var(--color-primary);
+}
+
+.programme-info__title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+}
+
+.programme-info__text {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 768px) {
+  .programme-info {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-2xl);
+  }
+}

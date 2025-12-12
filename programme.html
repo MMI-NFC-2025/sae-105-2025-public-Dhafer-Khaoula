@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+    name="description"
+    content="Découvrez le programme complet du FlyTapFest 2026 : spectacles, horaires et artistes pour deux jours inoubliables.">
+    <title>Programme - FlyTapFest</title>
+
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <script type="module" src="/src/js/script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <a class="header__link" href="/">
+        <img
+          class="header__logo"
+          src="/assets/icons/icon-logo-dark (1).svg"
+          alt="Logo FlyTapFest" />
+      </a>
+
+      <button
+        class="header__menu-btn menu-btn"
+        aria-label="menu"
+        aria-expanded="false"
+        aria-controls="mainNav">
+        <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+        <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
+        <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
+      </button>
+
+      <nav class="header__menu menu" id="mainNav" hidden>
+        <ul class="menu__list u-list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="/">Accueil</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/festival.html">Le Festival</a>
+          </li>                    
+          <li class="menu__item">
+            <a class="menu__link" href="/programme.html" aria-current="page">Programme</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/artistes.html">Artistes</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/scenes.html">Scènes</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/infos.html">Infos pratiques</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="page-hero">
+      <div class="page-hero__wrapper">
+        <h1 class="page-hero__title">Programme</h1>
+        <p class="page-hero__subtitle">Deux jours de spectacles inoubliables</p>
+      </div>
+    </section>
+
+    <!-- Programme Days Tabs -->
+    <section class="section">
+      <div class="section__wrapper">
+        <div class="programme-tabs">
+          <button class="programme-tab programme-tab--active" data-day="vendredi" aria-pressed="true">
+            <span class="programme-tab__day">Vendredi</span>
+            <span class="programme-tab__date">6 juin 2026</span>
+          </button>
+          <button class="programme-tab" data-day="samedi" aria-pressed="false">
+            <span class="programme-tab__day">Samedi</span>
+            <span class="programme-tab__date">7 juin 2026</span>
+          </button>
+        </div>
+
+        <!-- Vendredi Programme -->
+        <div class="programme-day" id="vendredi" aria-hidden="false">
+          <div class="programme-timeline">
+            <!-- 18h00 -->
+            <article class="programme-event">
+              <div class="programme-event__time">
+                <time datetime="18:00">18h00</time>
+              </div>
+              <div class="programme-event__content">
+                <div class="programme-event__badge programme-event__badge--blue">Ouverture</div>
+                <h3 class="programme-event__title">Ouverture des portes</h3>
+                <p class="programme-event__description">
+                  Début du festival avec l'ouverture du village festif, des stands de restauration et des espaces de détente.
+                </p>
+                <div class="programme-event__location">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.428 21.929 12.217 22 12 22C11.783 22 11.572 21.929 11.399 21.799C9.539 20.193 4 14.993 4 10C4 5.029 7.582 2 12 2C16.418 2 20 5.029 20 10Z" stroke="currentColor" stroke-width="1.5"/>
+                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                  <span>Village Festival</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 19h30 -->
+            <article class="programme-event">
+              <div class="programme-event__time">
+                <time datetime="19:30">19h30</time>
+              </div>
+              <div class="programme-event__content">
+                <div class="programme-event__badge programme-event__badge--pink">Spectacle</div>
+                <h3 class="programme-event__title">Initiation aux Claquettes</h3>
+                <p class="programme-event__description">
+                  Atelier participatif animé par nos artistes pour découvrir les bases des claquettes. Ouvert à tous, débutants bienvenus !
+                </p>
+                <div class="programme-event__details">
+                  <div class="programme-event__location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.428 21.929 12.217 22 12 22C11.783 22 11.572 21.929 11.399 21.799C9.539 20.193 4 14.993 4 10C4 5.029 7.582 2 12 2C16.418 2 20 5.029 20 10Z" stroke="currentColor" stroke-width="1.5"/>
+                      <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    <span>Scène Principale</span>
+                  </div>
+                  <div class="programme-event__artist">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+                      <path d="M6 21V19C6 16.7909 7.79086 15 10 15H14C16.2091 15 18 16.7909 18 19V21" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span>Équipe FlyTapFest</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- 21h00 -->
+            <article class="programme-event programme-event--featured">
+              <div class="programme-event__time">
+                <time datetime="21:00">21h00</time>
+              </div>
+              <div class="programme-event__content">
+                <div class="programme-event__badge programme-event__badge--purple">Spectacle Principal</div>
+                <h3 class="programme-event__title">Rhythm in the Sky</h3>
+                <p class="programme-event__description">
+                  Le spectacle d'ouverture époustouflant où 8 danseurs de claquettes dialoguent avec 500 drones lumineux. Une chorégraphie aérienne et terrestre à couper le souffle.
+                </p>
+                <div class="programme-event__details">
+                  <div class="programme-event__location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.428 21.929 12.217 22 12 22C11.783 22 11.572 21.929 11.399 21.799C9.539 20.193 4 14.993 4 10C4 5.029 7.582 2 12 2C16.418 2 20 5.029 20 10Z" stroke="currentColor" stroke-width="1.5"/>
+                      <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    <span>Grande Scène</span>
+                  </div>
+                  <div class="programme-event__artist">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+                      <path d="M6 21V19C6 16.7909 7.79086 15 10 15H14C16.2091 15 18 16.7909 18 19V21" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span>The Sky Tappers</span>
+                  </div>
+                  <div class="programme-event__duration">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                      <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span>60 minutes</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- 22h30 -->
+            <article class="programme-event">
+              <div class="programme-event__time">
+                <time datetime="22:30">22h30</time>
+              </div>
+              <div class="programme-event__content">
+                <div class="programme-event__badge programme-event__badge--pink">Performance</div>
+                <h3 class="programme-event__title">Constellation Beats</h3>
+                <p class="programme-event__description">
+                  Performance intimiste mêlant percussions corporelles et drones en formation géométrique. Une exploration sonore et visuelle hypnotique.
+                </p>
+                <div class="programme-event__details">
+                  <div class="programme-event__location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.428 21.929 12.217 22 12 22C11.783 22 11.572 21.929 11.399 21.799C9.539 20.193 4 14.993 4 10C4 5.029 7.582 2 12 2C16.418 2 20 5.029 20 10Z" stroke="currentColor" stroke-width="1.5"/>
+                      <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    <span>Scène Intime</span>
+                  </div>
+                  <div class="programme-event__artist">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+                      <path d="M6 21V19C6 16.7909 7.79086 15 10 15H14C16.2091 15 18 16.7909 18 19V21" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span>Marcus Johnson Trio</span>
+                  </div>
+                  <div class="programme-event__duration">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                      <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span>45 minutes</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- 23h45 -->
+            <article class="programme-event">
+              <div class="programme-event__time">
+                <time datetime="23:45">23h45</time>
+              </div>
+              <div class="programme-event__content">
+                <div class="programme-event__badge programme-event__badge--blue">Clôture</div>
+                <h3 class="programme-event__title">Fin de la première soirée</h3>
+                <p class="programme-event__description">
+                  Rencontres avec les artistes au village festival. Les bars restent ouverts jusqu'à minuit.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Samedi Programme -->
+        <div class="programme-day" id="samedi" aria-hidden="true" hidden>
+          <div class="programme-timeline">
+            <!-- 17h00 -->
+            <article class="programme-event">
+              <div class="programme-event__time">
+                <time datetime="17:00">17h00</time>
+              </div>
+              <div class="programme-event__content">
+                <div class="programme-event__badge programme-event__badge--blue">Ouverture</div>
+                <h3 class="programme-event__title">Ouverture des portes</h3>
+                <p class="programme-event__description">
+                  Ouverture du site avec activités pour tous : village, restauration, zones de repos.
+                </p>
+                <div class="programme-event__location">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.428 21.929 12.217 22 12 22C11.783 22 11.572 21.929 11.399 21.799C9.539 20.193 4 14.993 4 10C4 5.029 7.582 2 12 2C16.418 2 20 5.029 20 10Z" stroke="currentColor" stroke-width="1.5"/>
+                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                  <span>Village Festival</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 18h30 -->
+            <article class="programme-event">
+              <div class="programme-event__time">
+                <time datetime="18:30">18h30</time>
+              </div>
+              <div class="programme-event__content">
+                <div class="programme-event__badge programme-event__badge--pink">Atelier</div>
+                <h3 class="programme-event__title">Technologie des Drones</h3>
+                <p class="programme-event__description">
+                  Découverte en coulisses de la technologie qui permet aux drones de danser dans le ciel. Démonstrations et échanges avec l'équipe technique.
+                </p>
+                <div class="programme-event__details">
+                  <div class="programme-event__location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.428 21.929 12.217 22 12 22C11.783 22 11.572 21.929 11.399 21.799C9.539 20.193 4 14.993 4 10C4 5.029 7.582 2 12 2C16.418 2 20 5.029 20 10Z" stroke="currentColor" stroke-width="1.5"/>
+                      <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    <span>Espace Tech</span>
+                  </div>
+                  <div class="programme-event__artist">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+                      <path d="M6 21V19C6 16.7909 7.79086 15 10 15H14C16.2091 15 18 16.7909 18 19V21" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span>SkyTech Team</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- 20h00 -->
+            <article class="programme-event">
+              <div class="programme-event__time">
+                <time datetime="20:00">20h00</time>
+              </div>
+              <div class="programme-event__content">
+                <div class="programme-event__badge programme-event__badge--pink">Spectacle</div>
+                <h3 class="programme-event__title">Urban Legends</h3>
+                <p class="programme-event__description">
+                  Un voyage à travers l'histoire du tap dance, du jazz au hip-hop, accompagné de projections visuelles aériennes retraçant l'évolution de cet art.
+                </p>
+                <div class="programme-event__details">
+                  <div class="programme-event__location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.428 21.929 12.217 22 12 22C11.783 22 11.572 21.929 11.399 21.799C9.539 20.193 4 14.993 4 10C4 5.029 7.582 2 12 2C16.418 2 20 5.029 20 10Z" stroke="currentColor" stroke-width="1.5"/>
+                      <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    <span>Scène Principale</span>
+                  </div>
+                  <div class="programme-event__artist">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+                      <path d="M6 21V19C6 16.7909 7.79086 15 10 15H14C16.2091 15 18 16.7909 18 19V21" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span>Rhythm Collective</span>
+                  </div>
+                  <div class="programme-event__duration">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                      <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span>50 minutes</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- 21h30 -->
+            <article class="programme-event programme-event--featured">
+              <div class="programme-event__time">
+                <time datetime="21:30">21h30</time>
+              </div>
+              <div class="programme-event__content">
+                <div class="programme-event__badge programme-event__badge--purple">Grand Final</div>
+                <h3 class="programme-event__title">Celestial Symphony</h3>
+                <p class="programme-event__description">
+                  Le spectacle de clôture grandiose réunissant tous les artistes du festival. Plus de 700 drones illuminent le ciel dans une chorégraphie finale épique accompagnée par l'ensemble des danseurs.
+                </p>
+                <div class="programme-event__details">
+                  <div class="programme-event__location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.428 21.929 12.217 22 12 22C11.783 22 11.572 21.929 11.399 21.799C9.539 20.193 4 14.993 4 10C4 5.029 7.582 2 12 2C16.418 2 20 5.029 20 10Z" stroke="currentColor" stroke-width="1.5"/>
+                      <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    <span>Grande Scène</span>
+                  </div>
+                  <div class="programme-event__artist">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+                      <path d="M6 21V19C6 16.7909 7.79086 15 10 15H14C16.2091 15 18 16.7909 18 19V21" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span>Tous les artistes FlyTapFest</span>
+                  </div>
+                  <div class="programme-event__duration">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                      <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span>75 minutes</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- 23h15 -->
+            <article class="programme-event">
+              <div class="programme-event__time">
+                <time datetime="23:15">23h15</time>
+              </div>
+              <div class="programme-event__content">
+                <div class="programme-event__badge programme-event__badge--blue">After Party</div>
+                <h3 class="programme-event__title">Soirée de clôture</h3>
+                <p class="programme-event__description">
+                  Célébration finale avec DJ set, rencontre avec les artistes et festivités jusqu'à minuit.
+                </p>
+                <div class="programme-event__location">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.428 21.929 12.217 22 12 22C11.783 22 11.572 21.929 11.399 21.799C9.539 20.193 4 14.993 4 10C4 5.029 7.582 2 12 2C16.418 2 20 5.029 20 10Z" stroke="currentColor" stroke-width="1.5"/>
+                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                  <span>Village Festival</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="section section--alt">
+      <div class="section__wrapper">
+        <div class="programme-info">
+          <div class="programme-info__card">
+            <svg class="programme-info__icon" width="48" height="48" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <h3 class="programme-info__title">Horaires</h3>
+            <p class="programme-info__text">
+              Le programme peut être sujet à des modifications de dernière minute. Nous vous conseillons d'arriver 30 minutes avant chaque spectacle.
+            </p>
+          </div>
+
+          <div class="programme-info__card">
+            <svg class="programme-info__icon" width="48" height="48" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2"/>
+              <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <h3 class="programme-info__title">Lieux</h3>
+            <p class="programme-info__text">
+              Tous les spectacles se déroulent au Parc du Près-la-Rose. Un plan du site est disponible à l'entrée et sur notre application mobile.
+            </p>
+          </div>
+
+          <div class="programme-info__card">
+            <svg class="programme-info__icon" width="48" height="48" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 2V6M8 2V6M3 10H21" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <h3 class="programme-info__title">Réservations</h3>
+            <p class="programme-info__text">
+              Certains ateliers nécessitent une réservation préalable. Billets disponibles sur place dans la limite des places disponibles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__social">
+        <a class="footer__social-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg class="footer__social-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+          </svg>
+        </a>
+        <a class="footer__social-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg class="footer__social-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      <p class="footer__copyright">© 2026 FlyTapFest. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Programme tabs functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll('.programme-tab');
+      const days = document.querySelectorAll('.programme-day');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const dayId = tab.dataset.day;
+          
+          // Update tabs
+          tabs.forEach(t => {
+            t.classList.remove('programme-tab--active');
+            t.setAttribute('aria-pressed', 'false');
+          });
+          tab.classList.add('programme-tab--active');
+          tab.setAttribute('aria-pressed', 'true');
+          
+          // Update content
+          days.forEach(day => {
+            if (day.id === dayId) {
+              day.setAttribute('aria-hidden', 'false');
+              day.removeAttribute('hidden');
+            } else {
+              day.setAttribute('aria-hidden', 'true');
+              day.setAttribute('hidden', '');
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
