@@ -6,8 +6,8 @@
 - NOM : DHAFER
 - PRÉNOM : KHAOULA
 - GROUPE : C2
-- URL du site :
-- URL FIGMA :
+- URL du site :https://flytapfest.netlify.app/
+- URL FIGMA :https://www.figma.com/design/kYOZIxSnkh5mCMkGp0dAIF/Maquette-FlyTapFest?node-id=0-1&t=jGxzmahOtcnC0AVb-1
 
 ## Sujet
 

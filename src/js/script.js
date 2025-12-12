@@ -1,6 +1,4 @@
-// Attendre que le DOM soit complètement chargé
 document.addEventListener('DOMContentLoaded', () => {
-  
   // Menu Toggle
   const menuBtn = document.querySelector('.menu-btn');
   const menu = document.querySelector('.menu');
@@ -24,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // FAQ Accordion
+  //URL : https://flytapfest.netlify.app/infos dans la section réglement du festival
   const summaries = document.querySelectorAll('.accordeon summary');
 
   summaries.forEach(summary => {
@@ -35,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // *** CAROUSEL ***
+  // *** CAROUSEL *** ne marche pas  URL : https://flytapfest.netlify.app/scenes dans la section Galerie du festival
   const carousel = document.querySelector(".carousel__container");
   const prevButton = document.querySelector(".carousel__button--prev");
   const nextButton = document.querySelector(".carousel__button--next");
