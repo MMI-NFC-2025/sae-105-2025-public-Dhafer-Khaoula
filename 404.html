@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+    name="description"
+    content="Page non trouvée - FlyTapFest">
+    <title>404 - Page non trouvée - FlyTapFest</title>
+
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <script type="module" src="/src/js/script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <a class="header__link" href="/">
+        <img
+          class="header__logo"
+          src="/assets/icons/icon-logo-dark (1).svg"
+          alt="Logo FlyTapFest" />
+      </a>
+
+      <button
+        class="header__menu-btn menu-btn"
+        aria-label="menu"
+        aria-expanded="false"
+        aria-controls="mainNav">
+        <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+        <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
+        <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
+      </button>
+
+      <nav class="header__menu menu" id="mainNav" hidden>
+        <ul class="menu__list u-list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="/">Accueil</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/festival.html">Le Festival</a>
+          </li>                    
+          <li class="menu__item">
+            <a class="menu__link" href="/programme.html">Programme</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/artistes.html">Artistes</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/scenes.html">Scènes</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/infos.html">Infos pratiques</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+        <ul class="menu__social-list u-list-unstyled" aria-label="Réseaux sociaux">
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="error-page">
+      <div class="error-page__wrapper">
+        <div class="error-page__content">
+          <div class="error-page__number">404</div>
+          <h1 class="error-page__title">Oups ! Page introuvable</h1>
+          <p class="error-page__text">
+            Il semblerait que cette page se soit envolée avec nos drones... 
+            La page que vous cherchez n'existe pas ou a été déplacée.
+          </p>
+          <div class="error-page__actions">
+            <a href="/" class="btn btn--primary">Retour à l'accueil</a>
+            <a href="/programme.html" class="btn btn--secondary">Voir le programme</a>
+          </div>
+        </div>
+        <div class="error-page__illustration">
+          <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="200" cy="150" r="100" stroke="currentColor" stroke-width="2" opacity="0.2"/>
+            <circle cx="200" cy="150" r="80" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+            <circle cx="200" cy="150" r="60" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+            
+            <circle cx="180" cy="80" r="8" fill="currentColor" opacity="0.6">
+              <animate attributeName="cy" values="80;60;80" dur="2s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="220" cy="100" r="6" fill="currentColor" opacity="0.5">
+              <animate attributeName="cy" values="100;80;100" dur="2.5s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="160" cy="120" r="7" fill="currentColor" opacity="0.7">
+              <animate attributeName="cy" values="120;100;120" dur="3s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="240" cy="140" r="5" fill="currentColor" opacity="0.6">
+              <animate attributeName="cy" values="140;120;140" dur="2.2s" repeatCount="indefinite"/>
+            </circle>
+            
+            <path d="M170 150 L180 160 L190 140 L200 155 L210 145 L220 165 L230 150" 
+                  stroke="currentColor" 
+                  stroke-width="3" 
+                  stroke-linecap="round" 
+                  fill="none"
+                  opacity="0.8"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="section__wrapper">
+        <h2 class="section__title">Pages populaires</h2>
+        <div class="popular-pages">
+          <a href="/" class="popular-page-card">
+            <div class="popular-page-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M9 22V12H15V22" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="popular-page-card__title">Accueil</h3>
+            <p class="popular-page-card__description">Découvrez le FlyTapFest</p>
+          </a>
+
+          <a href="/programme.html" class="popular-page-card">
+            <div class="popular-page-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M16 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M3 10H21" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="popular-page-card__title">Programme</h3>
+            <p class="popular-page-card__description">Tous les spectacles du festival</p>
+          </a>
+
+          <a href="/artistes.html" class="popular-page-card">
+            <div class="popular-page-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="popular-page-card__title">Artistes</h3>
+            <p class="popular-page-card__description">Les talents du festival</p>
+          </a>
+
+          <a href="/infos.html" class="popular-page-card">
+            <div class="popular-page-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 16V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="12" cy="8" r="1" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="popular-page-card__title">Infos pratiques</h3>
+            <p class="popular-page-card__description">Tout pour préparer votre venue</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__content">
+        <div class="footer__section">
+          <h3 class="footer__title">FlyTapFest</h3>
+          <p class="footer__text">Le festival qui fusionne l'art des claquettes et la technologie des drones.</p>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__title">Navigation</h3>
+          <nav class="footer__nav">
+            <a href="/" class="footer__link">Accueil</a>
+            <a href="/festival.html" class="footer__link">Le Festival</a>
+            <a href="/programme.html" class="footer__link">Programme</a>
+            <a href="/artistes.html" class="footer__link">Artistes</a>
+            <a href="/scenes.html" class="footer__link">Scènes</a>
+            <a href="/infos.html" class="footer__link">Infos pratiques</a>
+            <a href="/contact.html" class="footer__link">Contact</a>
+          </nav>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__title">Suivez-nous</h3>
+          <div class="footer__social">
+            <a href="https://facebook.com" class="footer__social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://instagram.com" class="footer__social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://twitter.com" class="footer__social-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 FlyTapFest. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
