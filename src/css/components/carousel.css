@@ -1,60 +1,63 @@
-.carousel {
-  position: relative;
-  padding: var(--space-lg) 0;
-}
+/* Carousel Styles */
 
 .carousel__controls {
-  display: flex;
-  gap: var(--space-sm);
+  display: flex !important;
+  gap: 16px;
+  align-items: center;
   justify-content: center;
-  margin-bottom: var(--space-lg);
+  margin: 1em auto;
 }
 
 .carousel__button {
-  width: 3rem;
-  height: 3rem;
-  display: flex;
+  width: 50px;
+  height: 50px;
+  display: flex !important;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-bg);
-  border: 2px solid var(--color-border);
-  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  border-radius: 10% / 50%;
+  background-color: var(--color-white);
   color: var(--color-dark);
+  cursor: pointer;
   transition: all var(--transition-base);
+  flex-shrink: 0;
 }
 
 .carousel__button:hover {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
-  color: white;
+  color: var(--color-white);
 }
 
-.carousel__button:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-
-.carousel__track {
-  display: flex;
-  gap: var(--space-lg);
-  overflow-x: auto;
-  scroll-behavior: smooth;
+.carousel__container {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 16px;
+  overflow-x: scroll !important;
+  overflow-y: hidden !important;
+  margin-left: -24px;
+  margin-right: -24px;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  padding: var(--space-xs);
+  padding: 1rem 0;
 }
 
-.carousel__track::-webkit-scrollbar {
+.carousel__container::-webkit-scrollbar {
   display: none;
 }
 
-.carousel__slide {
+.carousel__item {
+  flex: 0 0 100% !important;
+  flex-shrink: 0 !important;
+  min-width: 100%;
   scroll-snap-align: center;
 }
 
-@media (min-width: 768px) {
-  .carousel__track {
-    justify-content: center;
-  }
+.carousel__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: var(--radius-lg);
 }
