@@ -1,0 +1,75 @@
+.faq {
+  max-width: 800px;
+  margin: var(--space-xl) auto 0;
+}
+
+.faq__item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-md);
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.faq__item:hover {
+  border-color: var(--color-primary);
+}
+
+.faq__item[open] {
+  background-color: var(--color-bg-alt);
+}
+
+.faq__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-lg);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.faq__summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq__summary::after {
+  content: '+';
+  font-size: var(--font-size-2xl);
+  font-weight: 300;
+  color: var(--color-primary);
+  transition: transform var(--transition-base);
+  flex-shrink: 0;
+  margin-left: var(--space-md);
+}
+
+.faq__item[open] .faq__summary::after {
+  transform: rotate(45deg);
+}
+
+.faq__title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.faq__content {
+  padding: 0 var(--space-lg) var(--space-lg);
+  animation: fadeIn var(--transition-base);
+}
+
+.faq__details {
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

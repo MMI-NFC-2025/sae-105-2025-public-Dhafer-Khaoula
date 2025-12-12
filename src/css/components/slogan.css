@@ -1,0 +1,32 @@
+.slogan {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-3xl) var(--container-padding);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(236, 72, 153, 0.1));
+}
+
+.slogan__intro {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-md);
+}
+
+.slogan__title {
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--space-xl);
+  max-width: 18ch;
+}
+
+@media (min-width: 768px) {
+  .slogan__intro {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .slogan__title {
+    font-size: var(--font-size-5xl);
+  }
+}

@@ -1,0 +1,83 @@
+.discover-grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.discover-card {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.discover-card__link {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.discover-card__image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.discover-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.discover-card:hover .discover-card__image img {
+  transform: scale(1.1);
+}
+
+.discover-card__content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--space-xl);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
+}
+
+.discover-card__icon {
+  margin-bottom: var(--space-sm);
+  width: 2rem;
+  height: 2rem;
+}
+
+.discover-card__title {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-md);
+}
+
+.discover-card__arrow {
+  font-size: var(--font-size-2xl);
+  transition: transform var(--transition-base);
+}
+
+.discover-card:hover .discover-card__arrow {
+  transform: translateX(0.5rem);
+}
+
+.discover-card--blue .discover-card__icon,
+.discover-card--blue .discover-card__arrow {
+  color: #60a5fa;
+}
+
+.discover-card--pink .discover-card__icon,
+.discover-card--pink .discover-card__arrow {
+  color: #f472b6;
+}
+
+.discover-card--purple .discover-card__icon,
+.discover-card--purple .discover-card__arrow {
+  color: #a78bfa;
+}
