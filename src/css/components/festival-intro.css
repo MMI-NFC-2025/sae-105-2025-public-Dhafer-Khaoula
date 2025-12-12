@@ -1,0 +1,41 @@
+/* Festival Intro Component */
+.festival-intro {
+  display: grid;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+.festival-intro__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.festival-intro__paragraph {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-muted);
+}
+
+.festival-intro__image {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 2px solid var(--color-border-card);
+}
+
+.festival-intro__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .festival-intro {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+  }
+  
+  .festival-intro__paragraph {
+    font-size: var(--font-size-xl);
+  }
+}

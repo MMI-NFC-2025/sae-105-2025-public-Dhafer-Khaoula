@@ -21,6 +21,7 @@
 </head>
 <body>
  <header class="header">
+    <div class="header__wrapper">
       <a class="header__link" href="/">
         <img
           class="header__logo"
@@ -34,6 +35,7 @@
         aria-expanded="false"
         aria-controls="mainNav">
         <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+        <span class="menu-btn__bar menu-btn__bar--middle" aria-hidden="true"></span>
         <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
       </button>
 
@@ -61,13 +63,231 @@
             <a class="menu__link" href="/contact.html">Contact</a>
           </li>
         </ul>
-        <ul class="menu__social-list u-list-unstyled">
+        <ul class="menu__social-list u-list-unstyled" aria-label="Réseaux sociaux">
           <li class="menu__social-item">
-            <a class="menu__social-link" href="https://facebook.com">Facebook</a>
+            <a class="menu__social-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
           </li>
           <li class="menu__social-item">
-            <a class="menu__social-link" href="https://instagram.com">Instagram</a>
+            <a class="menu__social-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
           </li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero__background">
+          <img class="hero__bg-image" src="/assets/img/hero-shoe.png" alt="" aria-hidden="true" />
+        </div>
+        <div class="hero__container">
+          <h1 class="hero__title">FLYTAPFEST</h1>
+          <p class="hero__subtitle">Festival de claquettes</p>
+          <p class="hero__description">
+            Fusion entre claquettes traditionnelles et<br />
+            spectacle de drones lumineux
+          </p>
+          <div class="hero__info">
+            <p class="hero__info-item">
+              <svg class="hero__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 2V6M16 2V6M3 10H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <time datetime="2026-06-06">6-7 juin 2026</time>
+            </p>
+            <p class="hero__info-item">
+              <svg class="hero__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.428 21.929 12.217 22 12 22C11.783 22 11.572 21.929 11.399 21.799C9.539 20.193 4 14.993 4 10C4 5.029 7.582 2 12 2C16.418 2 20 5.029 20 10Z" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              Parc du Près-la-Rose, Montbéliard
+            </p>
+          </div>
+          <a class="hero__cta btn btn--primary" href="/billets.html">
+            <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 6V4C6 2.895 6.895 2 8 2H16C17.105 2 18 2.895 18 4V6" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            Réserver mes billets
+          </a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section section--about">
+        <div class="section__container">
+          <h2 class="section__title">Un festival entre ciel et terre</h2>
+          <p class="section__text">
+            Le FlyTapFest est un événement unique qui marie l'art ancestral des claquettes avec la technologie moderne des drones lumineux pour créer un spectacle époustouflant.
+          </p>
+          <a class="section__link" href="/festival.html">
+            En savoir plus
+            <svg class="section__link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- Discover Section -->
+      <section class="section section--discover">
+        <div class="section__container">
+          <h2 class="section__title">Découvrir le festival</h2>
+          <ul class="discover-list u-list-unstyled">
+            <li class="discover-item">
+              <a class="discover-card discover-card--programme" href="/programme.html">
+                <div class="discover-card__image">
+                  <img src="/assets/img/programme-preview.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="discover-card__content">
+                  <svg class="discover-card__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                    <path d="M8 2V6M16 2V6M3 10H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                  <h3 class="discover-card__title">Programme</h3>
+                  <span class="discover-card__arrow" aria-hidden="true">→</span>
+                </div>
+              </a>
+            </li>
+            <li class="discover-item">
+              <a class="discover-card discover-card--scenes" href="/scenes.html">
+                <div class="discover-card__image">
+                  <img src="/assets/img/scenes-preview.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="discover-card__content">
+                  <svg class="discover-card__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.428 21.929 12.217 22 12 22C11.783 22 11.572 21.929 11.399 21.799C9.539 20.193 4 14.993 4 10C4 5.029 7.582 2 12 2C16.418 2 20 5.029 20 10Z" stroke="currentColor" stroke-width="1.5"/>
+                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                  <h3 class="discover-card__title">Scènes</h3>
+                  <span class="discover-card__arrow" aria-hidden="true">→</span>
+                </div>
+              </a>
+            </li>
+            <li class="discover-item">
+              <a class="discover-card discover-card--artistes" href="/artistes.html">
+                <div class="discover-card__image">
+                  <img src="/assets/img/artistes-preview.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="discover-card__content">
+                  <svg class="discover-card__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M16 21V19C16 17.939 15.579 16.922 14.828 16.172C14.078 15.421 13.061 15 12 15H6C4.939 15 3.922 15.421 3.172 16.172C2.421 16.922 2 17.939 2 19V21" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                    <path d="M22 21V19C22 18.114 21.705 17.253 21.162 16.553C20.619 15.852 19.858 15.352 19 15.13M16 3.13C16.858 3.35 17.617 3.851 18.16 4.552C18.702 5.253 18.996 6.114 18.996 7C18.996 7.886 18.702 8.747 18.16 9.448C17.617 10.149 16.858 10.65 16 10.872" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                  <h3 class="discover-card__title">Artistes</h3>
+                  <span class="discover-card__arrow" aria-hidden="true">→</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Partners Section -->
+      <section class="section section--partners">
+        <div class="section__container">
+          <h2 class="section__title">Nos partenaires</h2>
+          <ul class="partners-grid u-list-unstyled">
+            <li class="partner-item">
+              <div class="partner-card">
+                <div class="partner-card__logo">
+                  <img src="/assets/img/logo-doubs.svg" alt="Département du Doubs" loading="lazy" />
+                </div>
+                <p class="partner-card__name">Département du Doubs</p>
+              </div>
+            </li>
+            <li class="partner-item">
+              <div class="partner-card">
+                <div class="partner-card__logo">
+                  <img src="/assets/img/logo-montbeliard.svg" alt="Ville de Montbéliard" loading="lazy" />
+                </div>
+                <p class="partner-card__name">Ville de Montbéliard</p>
+              </div>
+            </li>
+            <li class="partner-item">
+              <div class="partner-card">
+                <div class="partner-card__logo">
+                  <img src="/assets/img/logo-tourisme.svg" alt="Office de Tourisme" loading="lazy" />
+                </div>
+                <p class="partner-card__name">Office de Tourisme</p>
+              </div>
+            </li>
+            <li class="partner-item">
+              <div class="partner-card">
+                <div class="partner-card__logo">
+                  <img src="/assets/img/logo-region.svg" alt="Région Bourgogne-Franche-Comté" loading="lazy" />
+                </div>
+                <p class="partner-card__name">Région Bourgogne-Franche-Comté</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Final CTA Section -->
+      <section class="section section--final">
+        <div class="section__container">
+          <h2 class="final__title">FLYTAPFEST</h2>
+          <p class="final__date">
+            <time datetime="2026-06-06">6-7 juin 2026</time>
+          </p>
+          <address class="final__contact">
+            <p class="final__contact-item">
+              <svg class="final__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.428 21.929 12.217 22 12 22C11.783 22 11.572 21.929 11.399 21.799C9.539 20.193 4 14.993 4 10C4 5.029 7.582 2 12 2C16.418 2 20 5.029 20 10Z" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              Parc du Près-la-Rose, Montbéliard
+            </p>
+            <p class="final__contact-item">
+              <svg class="final__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M22 16.92V19.92C22 20.49 21.55 20.97 20.99 21.01C20.76 21.02 20.52 21.02 20.29 21.02C10.36 21.02 2.32 13.01 2.01 3.11C1.98 2.54 2.45 2.06 3.02 2.04C3.05 2.04 3.08 2.04 3.12 2.04H6.12C6.67 2.04 7.12 2.49 7.12 3.04C7.12 3.55 7.18 4.06 7.29 4.54C7.39 4.97 7.28 5.42 6.99 5.72L5.64 7.24C6.94 10.28 9.08 12.42 12.12 13.72L13.63 12.37C13.94 12.08 14.39 11.96 14.81 12.06C15.3 12.18 15.8 12.24 16.32 12.24C16.87 12.24 17.32 12.69 17.32 13.24V16.24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <a class="final__link" href="tel:+33123456789">+33 1 23 45 67 89</a>
+            </p>
+            <p class="final__contact-item">
+              <svg class="final__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M2 7L12 13L22 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <a class="final__link" href="mailto:contact@flytapfest.fr">contact@flytapfest.fr</a>
+            </p>
+          </address>
+          <div class="final__partnership">
+            <p class="final__partnership-text">
+              En partenariat avec<br />
+              <strong class="final__partnership-name">Ville de Montbéliard</strong>
+            </p>
+            <div class="final__partnership-logo">
+              <img src="/assets/img/logo-montbeliard-large.svg" alt="Ville de Montbéliard" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <ul class="footer__social u-list-unstyled" aria-label="Suivez-nous">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z"/>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.971H15.83c-1.49 0-1.955.93-1.955 1.886v2.265h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="footer__copyright">© 2026 FlyTapFest. Tous droits réservés.</p>
+      </div>
+    </footer>
+  </body>
+</html>
